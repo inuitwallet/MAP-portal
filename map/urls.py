@@ -163,23 +163,23 @@ urlpatterns = [
     ),
 
     # Edit profile
+    #url(
+    #    r'^(?P<username>[\@\.\w-]+)/edit/$',
+    #    userena_views.profile_edit,
+    #    {
+    #        'template_name': 'map/profile_form.html'
+    #    },
+    #    name='userena_profile_edit'
+    #),
+
+    # View profiles
     url(
-        r'^(?P<username>[\@\.\w-]+)/edit/$',
+        r'^(?P<username>(?!(signout|signup|signin)/)[\@\.\w-]+)/$',
         userena_views.profile_edit,
         {
             'template_name': 'map/profile_form.html'
         },
         name='userena_profile_edit'
-    ),
-
-    # View profiles
-    url(
-        r'^(?P<username>(?!(signout|signup|signin)/)[\@\.\w-]+)/$',
-        userena_views.profile_detail,
-        {
-            'template_name': 'map/profile_detail.html'
-        },
-        name='userena_profile_detail'
     ),
     url(
         r'^page/(?P<page>[0-9]+)/$',

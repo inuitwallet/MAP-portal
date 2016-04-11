@@ -6,115 +6,57 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Grayscale - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta name="description" content="MAP My Access Passport">
+    <meta name="author" content="MJ2P">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
 
 </head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    {% include "navigation.html" %}
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-4">
-                        <img class="img-responsive" src="{% static 'images/MAP.png' %}"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2 col-md-offset-3">
-                        <a href="signin" class="btn btn-primary btn-full-width">SignIn</a>
-                    </div>
-                    <div class="col-md-2 col-md-offset-2">
-                        <a href="signup" class="btn btn-default btn-full-width">SignUp</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+<body>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About MAP</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam sodales leo, non aliquam ante viverra ac. In lorem neque, vulputate aliquet lorem at, convallis consectetur sapien. Etiam non sem nulla. Etiam posuere odio ut arcu elementum congue. Aliquam eget lobortis arcu. Sed rutrum risus vitae aliquet faucibus. Nam dapibus tincidunt facilisis. Phasellus dignissim semper consequat. Donec ut sapien vitae augue vulputate egestas. Nam hendrerit sit amet magna ac tempus. Praesent tincidunt non dolor eget egestas. Morbi luctus tempus magna a mattis.</p>
-                <p>Duis varius posuere diam, sodales tincidunt massa molestie eget. Nam accumsan mattis nisi, nec posuere mauris mattis a. Proin vitae pretium quam. Aliquam tincidunt odio vel tortor accumsan scelerisque. Maecenas volutpat leo at rutrum interdum. Curabitur porttitor, dolor ac varius imperdiet, diam justo efficitur ex, sit amet porttitor augue nibh non metus. Mauris lacinia mauris in augue eleifend, ut semper nisl imperdiet. Donec volutpat urna sodales pulvinar iaculis. Sed at scelerisque elit. Sed ex nisl, placerat ac efficitur eget, maximus condimentum mauris. Nulla facilisi. Fusce accumsan augue et neque porttitor, eget vehicula ligula lacinia.</p>
+            <div class="col-md-2">
+                <img src="{% static 'images/jisc.png' %}" class="img-responsive jisc-logo" alt="JISC Logo" />
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>For more information about MAP please contact us</h2>
-                <p></p>
-                <p></p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+        <div class="row white">
+            <div class="col-md-2 col-md-offset-1">
+                <a href="/">
+                    <img src="{% static 'images/map.png' %}" class="img-responsive map-logo center-block" alt="MAP Logo" />
+                </a>
+            </div>
+            <div class="col-md-6 text-center title">
+                <p>
+                    MAP<br />
+                    My Access Passport
+                </p>
+            </div>
+            <div class="col-md-2 pull-right">
+                <img src="{% static 'images/nat-star.png' %}" class="img-responsive nat-star-logo" alt="National Star Logo" />
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; MAP {% now "Y" %}</p>
+        <div class="row top-pad">
+            <div class="col-md-10 col-md-offset-1 text-center blurb">
+                <p>MAP Allows you to transfer your Accessibility settings to any computer.</p>
+                <p>Signup to save your Accessibility settings to the MAP web portal where you can also edit them to best suit you.</p>
+                <p>Download the MAP client to apply your Accessibility settings to the computer where you are.</p>
+                <p>Save your Accessibility settings and the MAP client to a USB stick to take your settings with you.</p>
+            </div>
         </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="{% static 'js/jquery.js' %}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="{% static 'js/grayscale.js' %}"></script>
+        <div class="row top-pad">
+            <div class="col-md-2 col-md-offset-3">
+                <a href="signup" class="btn btn-default full">Sign Up</a>
+            </div>
+            <div class="col-md-2 col-md-offset-2">
+                <a href="signin" class="btn btn-primary full">Sign In</a>
+            </div>
+        </div>
+    </div>
 
 </body>
-
-</html>
