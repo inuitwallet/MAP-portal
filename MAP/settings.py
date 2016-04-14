@@ -134,7 +134,7 @@ USERENA_SIGNIN_REDIRECT_URL = '/%(username)s/'
 LOGIN_URL = '/signin/'
 LOGOUT_URL = '/signout/'
 
-SITE_ID = 1
+SITE_ID = 2
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
