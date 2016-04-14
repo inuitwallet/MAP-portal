@@ -23,7 +23,7 @@ router = routers.DefaultRouter()
 router.register(r'profiles', views.ProfileViewSet)
 
 urlpatterns = [
-    url(r'^', include('map.urls')),
     url(r'^api/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', admin.site.urls),
+    url(r'^', include('map.urls')),
 ]
