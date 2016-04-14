@@ -5,6 +5,11 @@ from userena import views as userena_views
 from django.contrib.auth import views as auth_views
 from userena.compat import auth_views_compat_quirks, password_reset_uid_kwarg
 from map import views as map_views
+from rest_framework import routers
+import views
+
+router = routers.DefaultRouter()
+router.register(r'profiles', views.ProfileViewSet)
 
 urlpatterns = [
     # Signup, signin and signout

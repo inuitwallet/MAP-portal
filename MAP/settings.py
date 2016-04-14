@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'easy_thumbnails',
     'userena.contrib.umessages',
     'django_extensions',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -166,3 +167,8 @@ STATICFILES_DIRS = (
 # https://warehouse.python.org/project/whitenoise/
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGE_SIZE': 10
+}

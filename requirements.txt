@@ -1,7 +1,8 @@
+dj-database-url
 django==1.9
 django-userena
 django-extensions
-dj-database-url
+djangorestframework
 gunicorn
 psycopg2
 whitenoise

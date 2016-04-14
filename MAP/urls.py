@@ -19,7 +19,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^', include('map.urls')),
-    # url(r'^map/', include('map.urls')),
-    # url(r'^messages/', include('userena.contrib.umessages.urls')),
+    url(r'^api/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', admin.site.urls),
 ]
