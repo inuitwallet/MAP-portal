@@ -86,7 +86,7 @@ urlpatterns = [
         {
             'template_name': 'map/activate_fail.html',
             'retry_template_name': 'map/activate_retry.html',
-            'success_url': 'userena_profile_edit'
+            'success_url': 'index'
         },
         name='userena_activate'
     ),
