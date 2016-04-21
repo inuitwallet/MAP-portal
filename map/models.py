@@ -13,7 +13,7 @@ class Profile(UserenaLanguageBaseProfile):
         User,
         unique=True,
         verbose_name=_('user'),
-        related_name='my_profile'
+        related_name='profile'
     )
     client_area_animation = models.BooleanField(default=False)
     disable_overlapped_content = models.BooleanField(default=False)
