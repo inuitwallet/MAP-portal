@@ -23,9 +23,9 @@ body {
 }
 
 .nat-star-logo {
-    height: 200px;
+    height: auto;
     width: auto;
-    position: relative
+    margin: auto;
 }
 
 .title {
