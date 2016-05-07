@@ -13,16 +13,62 @@
     {% csrf_token %}
     <fieldset>
       {{ form.non_field_errors }}
-      {% for field in form %}
-        {{ field.errors }}
-        {% if field.name == 'first_name' or field.name == 'last_name' or field.name == 'mugshot' or field.name == 'privacy' or field.name == 'language' %}
-        {% else %}
-        <div class="form-group">
-          {{ field.label_tag }}
-          {{ field|add_css:"form-control" }}
-        </div>
-        {% endif %}
-      {% endfor %}
+      <div class="form-group profile-group mouse-sonar">
+        <label for="id_mouse_sonar">
+            <span class="field-title">Mouse Sonar:</span>
+            <span class="field-description">
+                When Mouse Sonar is enabled,
+                releasing the Ctrl key causes several concentric circles to appear around the pointer for a short time.
+                This may be especially useful to locate the pointer on contrast-rich or colorful background.
+            </span>
+            {{ form.mouse_sonar|add_css:"form-control" }}
+        </label>
+      </div>
+      <div class="form-group profile-group show_sounds">
+        <label for="id_show_sounds">
+            <span class="field-title">Show Sounds:</span>
+            <span class="field-description">
+                When Show Sounds is enabled,
+                applications are required to present information visually in situations where they
+                would otherwise present the information only in audible form.
+            </span>
+            {{ form.show_sounds|add_css:"form-control" }}
+        </label>
+      </div>
+      <div class="form-group profile-group magnifier">
+        <label for="id_magnifier">
+            <span class="field-title">Magnifier:</span>
+            <span class="field-description">
+                When Magnifier is enabled,
+                a bar is created at the top of the screen that greatly magnifies where the mouse is.
+                As you move the pointer or cursor the magnifier will track it and show the new enlarged portion of the screen.
+            </span>
+            {{ form.magnifier|add_css:"form-control" }}
+        </label>
+      </div>
+      <div class="form-group profile-group on-screen-keyboard">
+        <label for="id_on_screen_keyboard">
+            <span class="field-title">On Screen Keyboard:</span>
+            <span class="field-description">
+                When the On Screen Keyboard is enabled,
+                a visual keyboard with all the standard keys is displayed on the screen.
+                You can select keys using the mouse or another pointing device,
+                or you can use a single key or group of keys to cycle through the keys on the screen.
+            </span>
+            {{ form.on_screen_keyboard|add_css:"form-control" }}
+        </label>
+      </div>
+      <div class="form-group profile-group focus-border">
+        <label for="id_focus_border">
+            <span class="field-title">Focus Border:</span>
+            <span class="field-description">
+                Alter the Focus Border to change the thickness of the border that is used to show that a screen element has focus.
+                This is especially useful to show which button is active when choosing a button to select.
+            </span>
+            {{ form.focus_border|add_css:"form-control" }}
+        </label>
+      </div>
+
     </fieldset>
     <input type="submit" value="{% trans 'Save changes' %}" class="form-control btn btn-primary"/>
   </form>

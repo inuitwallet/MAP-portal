@@ -19,13 +19,17 @@ body {
 }
 
 .map-logo {
-    height: 200px;
+    height: auto;
+    width: auto;
+    margin: auto;
+    max-height: 200px;
 }
 
 .nat-star-logo {
     height: auto;
     width: auto;
     margin: auto;
+    max-height: 200px;
 }
 
 .title {
@@ -39,6 +43,19 @@ body {
 
 form {
     font-size: 200%;
+}
+
+.profile-group {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.field-title {
+}
+
+.field-description {
+    font-weight: 500;
 }
 
 input[type=text],
