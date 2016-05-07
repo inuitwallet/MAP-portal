@@ -22,17 +22,8 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = (
             'user',
-            'client_area_animation',
-            'disable_overlapped_content',
-            'mouse_click_lock',
             'mouse_sonar',
-            'mouse_vanish',
-            'screen_reader',
-            'show_sounds',
-            'focus_border_height',
-            'focus_border_width',
-            'message_duration',
-            'mouse_click_lock_time',
-            'high_contrast',
-            'audio_description'
+            'focus_border',
+            'magnifier',
+            'on_screen_keyboard'
         )
