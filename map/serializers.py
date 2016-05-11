@@ -24,6 +24,7 @@ class ProfileSerializer(serializers.ModelSerializer):
             'user',
             'mouse_sonar',
             'focus_border',
+            'show_sounds',
             'magnifier',
             'on_screen_keyboard'
         )
