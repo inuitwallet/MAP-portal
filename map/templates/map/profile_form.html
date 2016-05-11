@@ -65,7 +65,8 @@
             <span class="field-title">Focus Border:</span>
             <span class="field-description">
                 Alter the Focus Border to change the thickness of the border that is used to show that a screen element has focus.
-                This is especially useful to show which button is active when choosing a button to select.
+                This is especially useful to show which button is active when choosing a button to select.<br />
+                The normal range for this option should be between 0 and 10. Any more than that and the text can become obscured on the button that has focus.
             </span>
             {{ form.focus_border|add_css:"form-control" }}
         </label>
