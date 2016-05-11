@@ -11,6 +11,10 @@ body {
     padding-top: 30px;
 }
 
+.download {
+    padding-top: 15px;
+}
+
 .jisc-logo {
     height: 70px;
     position: relative;
