@@ -2,7 +2,7 @@ dj-database-url
 django==1.9
 django-userena
 django-extensions
-djangorestframework==3.6.4
+djangorestframework==3.9.1
 gunicorn
 psycopg2
 whitenoise==3.3.1
